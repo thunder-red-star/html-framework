@@ -14,7 +14,7 @@
   text-align: center;
   font-family: 'Inter', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 900;
-  font-size: 15vw;
+  font-size: calc(60px + 14vw);
   min-font-size: 50px;
   margin: 10px 0 10px 0;
 }
@@ -24,6 +24,8 @@
   text-align: center;
   align-content: center;
   color: #fff;
+  padding: 20px;
+  margin-bottom: 50px;
 }
 
 .section-header {
@@ -32,6 +34,9 @@
   font-family: 'Inter', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 900;
   color: #fff;
+  font-size: calc(24px + 1.5vw);
+  margin: 10px 0 0px 0;
+  min-font-size: 24px;
 }
 
 .initial-button-container {
@@ -43,7 +48,7 @@
 }
 
 .usage-fact {
-  padding: 20px;
+  padding: 10vh;
   text-align: center;
   font-family: 'Inter', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 900;

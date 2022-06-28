@@ -1,0 +1,91 @@
+.navbar {
+    background-color: #282626;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    align-items: center;
+}
+
+.navbar-container {
+    min-width: 500px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.navbar-nav {
+
+}
+
+.navbar-brand {
+    float: left;
+    padding: 15px 15px;
+    font-size: 20px;
+    line-height: 20px;
+    height: 48px;
+    margin-right: 50px;
+}
+
+.navbar-img {
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type:none;
+    width:100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    display: inline-block;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #999;
+}
+
+.nav-list li a:hover {
+    background: linear-gradient(to right, #ff0000, #ffff00, #ff0000);
+    -webkit-background-clip: text !important;
+    transition: all 0.25s ease-in-out;
+    color: transparent;
+    width: calc(100% - 20px);
+    animation: glowing 100s linear infinite;
+    background-size: 1000%
+}
+
+.nav-button {
+    float: right;
+    padding: 10px 20px;
+    margin-left: 80px;
+    background-color: #008aff;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    font-family: 'Inter', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+.nav-button:after {
+    background-color: #008aff;
+}
+
+.github-icon {
+    width: 32px;
+    height: 32px;
+    padding-left: 0;
+}

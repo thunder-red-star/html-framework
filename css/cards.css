@@ -8,6 +8,7 @@
 
 .card-content {
     padding: 10px;
+    padding-bottom: 25px !important;
     color: #888;
 }
 
@@ -97,4 +98,5 @@
     text-align: center;
     align-items: center;
     align: center;
+    justify-content: center;
 }
