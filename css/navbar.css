@@ -13,13 +13,10 @@
   min-width: 500px;
   width: 70%;
   margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 .navbar-nav {
-  float: left;
+
 }
 
 .navbar-brand {
@@ -27,7 +24,14 @@
   padding: 15px 15px;
   font-size: 20px;
   line-height: 20px;
-  height: 50px;
+  height: 48px;
+  margin-right: 50px;
+}
+
+.navbar-img {
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
 }
 
 .nav-list {
@@ -39,12 +43,13 @@
   justify-content: space-between;
   padding-left: 0;
   padding-right: 0;
+  margin: 0;
 }
 
 .nav-list li {
   display: inline-block;
   padding: 15px 15px;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 20px;
 }
 
@@ -61,4 +66,26 @@
   width: calc(100% - 20px);
   animation: glowing 100s linear infinite;
   background-size: 1000%
+}
+
+.nav-button {
+  float: right;
+  padding: 10px 20px;
+  margin-left: 80px;
+  background-color: #008aff;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  font-family: 'Inter', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+.nav-button:after {
+  background-color: #008aff;
+}
+
+.github-icon {
+  width: 32px;
+  height: 32px;
+  padding-left: 0;
 }

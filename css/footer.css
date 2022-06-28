@@ -1,10 +1,13 @@
 .footer {
   padding: 10px;
   text-align: center;
+  width: 70%;
+  min-width: 500px;
+  margin: 0 auto;
 }
 
 .message {
   padding: 10px;
   text-align: center;
-    color: #555;
+  color: #555;
 }

@@ -1,39 +1,45 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The HTML Framework</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/atropos@1.0.2/atropos.min.css">
+    <meta name="description" content="The home page of the HTML Framework">
+    <meta name="author" content="ThunderRedStar">
+    <link rel="shortcut icon" href="img/html5/html5-badge.png">
+    <title>HTML – The Ultimate Web Framework</title>
     <link rel="stylesheet" href="css/inter.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/scrollbar.css">
-    <link rel="stylesheet" href="css/glow.css">
-    <link rel="stylesheet" href="css/cards.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/stats.css">
-    <link rel="stylesheet" href="css/marquee.css">
-    <link rel="stylesheet" href="css/buttons.css">
-    <script src="https://cdn.jsdelivr.net/npm/atropos@1.0.2/atropos.js"></script>
-    <script>
-			const myAtropos = Atropos({
-				el: '.atropos-root',
-			});
-    </script>
+    <link rel="stylesheet" href="css/glow.css" defer>
+    <link rel="stylesheet" href="css/cards.css" defer>
+    <link rel="stylesheet" href="css/footer.css" defer>
+    <link rel="stylesheet" href="css/stats.css" defer>
+    <link rel="stylesheet" href="css/marquee.css" defer>
+    <link rel="stylesheet" href="css/buttons.css" defer>
+    <link rel="stylesheet" href="css/learn.css" defer>
 </head>
 <body class="root">
 <div class="navbar">
     <div class="navbar-container">
-        <div class="navbar-brand">
-            <a href="index.html">
-                <img src="img/html5/html5-badge.png" alt="HTML5 Badge">
-            </a>
-        </div>
         <div class="navbar-nav">
             <ul class="nav-list">
+                <li class="navbar-brand">
+                    <a href="index.html">
+                        <img src="img/html5/html5-badge.png" class="navbar-img" alt="HTML5 Badge">
+                    </a>
+                </li>
                 <li><a href="https://gloutir.com/">Showcase</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://html.spec.whatwg.org/">Docs</a></li>
+                <li><a href="https://blog.whatwg.org/">Blog</a></li>
+                <li><a href="https://cambridgeanalytica.org/">Analytics</a></li>
+                <li><a href="https://www.w3schools.com/html/html_examples.asp">Examples</a></li>
+                <li><button class="nav-button button" id="nav-lh">
+                    Learn HTML
+                </button></li>
+                <li><a href="https://github.com/thunder-red-star/html-framework">
+                    <img src="img/ico/github.png" alt="GitHub" class="github-icon">
+                </a></li>
             </ul>
         </div>
     </div>
@@ -51,33 +57,46 @@
     <div class="paying-for-grid">
         <div class="paying-for-card">
             <h3 class="card-header">Incredible speed</h3>
-            <p class="card-content">The HTML framework provides the fastest speeds out of all frameworks ever created. No more having to wait for compiling, SSR, and other slow processes.</p>
-            <a class="card-link" href="https://w3schools.com/html/html_intro.asp" class="card-link">Read the documentation</a>
+            <p class="card-content">The HTML framework provides the fastest speeds out of all frameworks ever created.
+                No more having to wait for compiling, SSR, and other slow processes.</p>
+            <a class="card-link" href="https://w3schools.com/html/html_intro.asp" class="card-link">Read the
+                documentation</a>
         </div>
         <div class="paying-for-card">
             <h3 class="card-header">Amazing flexibility</h3>
-            <p class="card-content">The HTML framework is the most flexible framework ever created. You can use it to create any type of website you want, from a simple static page to a complex dynamic website.</p>
-            <a class="card-link" href="https://w3schools.com/html/html_intro.asp" class="card-link">Read the documentation</a>
+            <p class="card-content">The HTML framework is the most flexible framework ever created. You can use it to
+                create any type of website you want, from a simple static page to a complex dynamic website.</p>
+            <a class="card-link" href="https://w3schools.com/html/html_intro.asp" class="card-link">Read the
+                documentation</a>
         </div>
         <div class="paying-for-card">
             <h3 class="card-header">Easy to learn, hard to master</h3>
-            <p class="card-content">The HTML framework provides intuitive base elements for web design, but you'll learn a lot along the way when you become a true HTML developer.</p>
-            <a class="card-link" href="https://w3schools.com/html/html_intro.asp" class="card-link">Read the documentation</a>
+            <p class="card-content">The HTML framework provides intuitive base elements for web design, but you'll learn
+                a lot along the way when you become a true HTML developer.</p>
+            <a class="card-link" href="https://w3schools.com/html/html_intro.asp" class="card-link">Read the
+                documentation</a>
         </div>
         <div class="paying-for-card">
             <h3 class="card-header">Platform independent</h3>
-            <p class="card-content">Developing for mobile devices? for laptops? for Raspberry Pis? We've got you covered! Pretty much every device with a processor, RAM, and a screen can open and use HTML.</p>
-            <a class="card-link" href="https://w3schools.com/html/html_intro.asp" class="card-link">Read the documentation</a>
+            <p class="card-content">Developing for mobile devices? for laptops? for Raspberry Pis? We've got you
+                covered! Pretty much every device with a processor, RAM, and a screen can open and use HTML.</p>
+            <a class="card-link" href="https://w3schools.com/html/html_intro.asp" class="card-link">Read the
+                documentation</a>
         </div>
         <div class="paying-for-card">
             <h3 class="card-header">Dependency free</h3>
-            <p class="card-content">The HTML framework is dependency free. If you have a device and a browser, you can use the framework. No need to install 30,000 files and 2,500 deprecated packages to launch a website.</p>
-            <a class="card-link" href="https://w3schools.com/html/html_intro.asp" class="card-link">Read the documentation</a>
+            <p class="card-content">The HTML framework is dependency free. If you have a device and a browser, you can
+                use the framework. No need to install 30,000 files and 2,500 deprecated packages to launch a
+                website.</p>
+            <a class="card-link" href="https://w3schools.com/html/html_intro.asp" class="card-link">Read the
+                documentation</a>
         </div>
         <div class="paying-for-card">
             <h3 class="card-header">Loved by all</h3>
-            <p class="card-content">The HTML framework is used in every country in the world. It's used by over 4 billion websites, which is over 10x more than WordPress, React, Angular, and Vue combined.</p>
-            <a class="card-link" href="https://w3schools.com/html/html_intro.asp" class="card-link">Read the documentation</a>
+            <p class="card-content">The HTML framework is used in every country in the world. It's used by over 4
+                billion websites, which is over 10x more than WordPress, React, Angular, and Vue combined.</p>
+            <a class="card-link" href="https://w3schools.com/html/html_intro.asp" class="card-link">Read the
+                documentation</a>
         </div>
     </div>
 </div>
@@ -115,9 +134,18 @@
     <h1 class="big-number"><span class="glow">100%</span></h1>
     <p class="big-number-text"><span id="100-percent-statistics"></span></p>
 </div>
+<div class="learn-html">
+    <h2 class="lh-header" data-atropos-offset="5">Learn HTML</h2>
+    <p class="lh-text" data-atropos-offset="5">Learn HTML step-by-step and earn <span
+            style="text-decoration: line-through;">points</span> valuable skills ✨</p>
+    <img src="img/ss/w3.webp" alt="w3" class="w3-ss" data-atropos-offset="5">
+    <button class="button-primary button learn-button" id="learn-html" data-atropos-offset="5">Learn HTML</button>
+</div>
 <footer class="footer">
     <hr>
-    <p class="message">This is a semi-sarcastic website by <a href="https://www.thdr.dev">ThunderRedStar</a>. He was stupified by the number of NodeJS frameworks out there (42K on GitHub alone) and decided to create a website in their honor.</p>
+    <p class="message">This is a semi-sarcastic website by <a href="https://www.thdr.dev">ThunderRedStar</a>. He was
+        stupified by the number of NodeJS frameworks out there (42K on GitHub alone) and decided to create a website in
+        their honor.</p>
 </footer>
 <script src="js/100-percent-statistics.js"></script>
 <script src="js/button-goto.js"></script>
