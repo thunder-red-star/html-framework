@@ -11,3 +11,14 @@
   text-align: center;
   color: #555;
 }
+
+.footer a{
+  background: linear-gradient(to right, #ff0000, #ffff00, #ff0000);
+  -webkit-background-clip: text !important;
+  transition: all 0.25s ease-in-out;
+  color: transparent;
+  width: calc(100% - 20px);
+  animation: glowing 100s linear infinite;
+  background-size: 1000%;
+  text-decoration: none;
+}
