@@ -1,0 +1,86 @@
+.card-header {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.card-content {
+    padding: 10px;
+    color: #888;
+}
+
+.card-link {
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    margin-bottom: 10px;
+}
+
+.card-link:after {
+    content: "";
+    padding: 10px;
+    width: 0px !important;
+    transition: all 0.5s ease-in-out;
+}
+
+.card-link:hover {
+    background: linear-gradient(to right, #ff0000, #ffff00, #ff0000);
+    -webkit-background-clip: text !important;
+    transition: all 0.25s ease-in-out;
+    color: transparent;
+    width: calc(100% - 20px);
+    animation: glowing 100s linear infinite;
+    background-size: 1000%
+}
+
+.card-link:hover:after {
+    content: "->";
+    width: 100%;
+}
+
+.paying-for-card {
+    background-color: #282626;
+    border-color: #222222;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    transition: all 0.25s ease-in-out;
+}
+
+.paying-for-card:hover {
+    border-color: #282626;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+/* We want to have three columns in our grid, but if the device is too small, we want to show them in two or one column. */
+@media (max-width: 600px) {
+    .paying-for-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        margin: 10px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    .paying-for-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        margin: 10px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .paying-for-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        margin: 10px;
+    }
+}

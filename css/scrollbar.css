@@ -1,0 +1,16 @@
+.root::-webkit-scrollbar {
+  width: 5px;
+  background: #888888;
+}
+
+.root::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #ff8800;
+    transition: all 0.25s ease-in-out;
+    width: calc(100% - 20px);
+    animation: glowing 5s linear infinite;
+}
+@keyframes glowing {
+    0% { background-color: #ff0000; }
+    100% { background-color: #ffff00; }
+}

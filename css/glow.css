@@ -1,0 +1,14 @@
+
+.glow {
+    background: linear-gradient(to right, #ff0000, #ffff00, #ff0000);
+    -webkit-background-clip: text !important;
+    transition: all 0.25s ease-in-out;
+    color: transparent;
+    width: calc(100% - 20px);
+    animation: glowing 100s linear infinite;
+    background-size: 1000%
+}
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    100% { background-position: 1000% 0; }
+}
